@@ -1,3 +1,4 @@
+
 /**
 * Template Name: eBusiness - v4.7.0
 * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
@@ -303,9 +304,13 @@ div#preloader {
   display: flex;
   list-style: none;
   align-items: center;
+  
 }
 .navbar li {
   position: relative;
+  font-size: 24px !important;
+  font-family: 'Teko', sans-serif !important;
+  letter-spacing: 2px;
 }
 .navbar a, .navbar a:focus {
   display: flex;
@@ -467,6 +472,8 @@ div#preloader {
   display: block;
 }
 
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -514,7 +521,7 @@ div#preloader {
 #hero h2 {
   color: #fff;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 700;
   margin-left: 75px;
 }
@@ -528,8 +535,8 @@ div#preloader {
 #hero p {
   width: 80%;
   font-size: 200px;
+  font-weight: 900;
   line-height: 0.6; 
-  /* margin: 0 auto 30px auto; */
   color: #fff;
   margin-left:75px;
 }
@@ -543,7 +550,7 @@ div#preloader {
   #hero p {
     font-size: 38px;
     line-height: 0.8;
-    margin-left: 15px;
+    margin-left: 25px;
   }
 }
 #hero .carousel-fade {
@@ -587,21 +594,31 @@ div#preloader {
   cursor: pointer;
 }
 #hero .btn-get-started {
-  font-weight: 500;
-  font-size: 16px;
+  font-size: 26px;
+    font-weight: 700;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 32px;
-  border-radius: 50px;
+  top: 70%;
+  padding: 15px 30px;
+  /* border-radius: 50px; */
   transition: 0.5s;
   margin: 10px;
   margin-top: 30px;
   color: #fff;
-  background: #3ec1d5;
+  position: absolute;
+  border: 1px solid #d6d6d636;
+  /* background: #3ec1d5; */
 }
 #hero .btn-get-started:hover {
   background: #fff;
   color: #3ec1d5;
+}
+@media (max-width: 768px) {
+  #hero .btn-get-started {
+    font-size: 18px;
+    top: 56%;
+    margin-left: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -622,8 +639,12 @@ div#preloader {
 }
 
 .single-well p {
-  color: #444;
-  font-size: 20px;
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    
+    margin: 0 auto;
 }
 .well-middle{
   margin-bottom: 40px;
@@ -632,9 +653,20 @@ div#preloader {
   align-items: center;
 }
 .single-well #btn{
-  margin-top: 30px;
-  border-radius: 15px;
-  width: 150px;
+    margin-top: 30px;
+    background-color: #1c1254;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    line-height: 24px;
+    text-decoration: none !important;
+    border: 1px solid #1c1254;
+    
+}
+.single-well #btn:hover{
+  background-color: white;
+  color: #000;
 }
 @media (max-width: 768px) {
   .single-well img {
@@ -651,16 +683,16 @@ div#preloader {
   color: black;
 }
 .service-heading{
-  font-family: poppins,Sans-serif;
-  font-weight:80px;
-  font-size: 55px;
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
 }
 .services-head p{
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .services-area .member {
-  text-align: center;
   margin-bottom: 80px;
   position: relative;
 }
@@ -680,7 +712,7 @@ div#preloader {
 # service image overlay
 --------------------------------------------------------------*/
 
-.overlay {
+.overlay{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -692,36 +724,90 @@ div#preloader {
   transition: .5s ease;
   background-color:black;
 }
-.container:hover .overlay {
+.firstSection:hover .overlay {
   opacity: 1;
 }
 .overlay h2{
    color: white;
    margin-top: 20px;
    background-color: #3EC1D5;
-   margin-right: 15px;
+   width: 135px;
+   margin-left: 30px;
+   padding-bottom: 5px;
 
 }
-
-.text {
-  color: white;
-  font-size: 20px;
+.overlayA{
   position: absolute;
-  margin-left: 40px;
-  top: 40%;
-  left: 30%;
-  line-height: 1.8;
-  background-color: #000;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  /* text-align: center; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:black;
 }
-/* @media (max-width: 768px) {
-  .member img{
-     height: 700px;
-  }
-} */
+.secondSection:hover .overlayA{
+  opacity: 1;
+}
+.overlayA h2{
+   color: white;
+   margin-top: 20px;
+   background-color: #3EC1D5;
+   margin-left: 30px;
+   padding-bottom: 5px;
+   width: 140px;
+
+}
+.overlayB {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:black;
+}
+.thirdSection:hover .overlayB {
+  opacity: 1;
+}
+.overlayB h2{
+   color: white;
+   margin-top: 20px;
+   background-color: #3EC1D5;
+   width: 85px;
+   margin-left: 30px;
+   padding-bottom: 5px;
+}
+.text{
+     margin-left: 0%;
+     top: 0;
+     width: 100%;
+     background-color: rgba(0,0,0,0.9);
+}
+
+.text ul {
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+.text ul li{
+    margin-left: 40px;
+    margin-bottom: 20px; 
+    margin-top: 15px;
+}
+.text ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+}
 
 @media (max-width: 768px) {
   .text {
@@ -755,6 +841,22 @@ div#preloader {
   font-size: 25px;
   margin-top: 10px;
 }
+#kick-btn #btn{
+  margin-top: 30px;
+  background-color: #1c1254;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  line-height: 24px;
+  text-decoration: none !important;
+  border: 1px solid #1c1254;
+  
+}
+#kick-btn #btn:hover{
+background-color: white;
+color: #000;
+}
 /*--------------------------------------------------------------
 # our clint
 --------------------------------------------------------------*/
@@ -774,7 +876,10 @@ div#preloader {
 
 .clint-head{
   border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1029,14 +1134,9 @@ div#preloader {
   padding: 10px 20px;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
-# Quote
---------------------------------------------------------------*/
+/*  */
+/* # Quote */
+/*  */
 .suscribe-area {
   background: #3EC1D5 none repeat scroll 0 0;
   padding: 30px 0;
@@ -1206,7 +1306,247 @@ div#preloader {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
+.blog-banner{
+  background-image: url(../img/blog/blog1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+.blog-h2{
+  color: white;
+  margin-left: 150px;
+  margin-top: 200px;
+}
 
+@media (max-width: 768px) {
+  #blog-heading {
+    font-size: 25px;
+    margin-left: 100px;
+    top: 10%;
+    margin-top: 120px;
+    
+  }
+}
+
+
+#blog-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+#blog-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #444;
+}
+#blog-flters li:hover, #portfolio-flters li.filter-active {
+  border-color: #3EC1D5;
+  background: #3EC1D5;
+  color: #fff;
+}
+#blog-flters li:last-child {
+  margin-right: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+.portfolio-banner{
+  background-image: url(../img/portfolio/Portfolio-Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.section-headline h2{
+  margin-top: 60px;
+}
+
+.pst-content {
+  padding-left: 10px;
+}
+
+#portfolio-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+#portfolio-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #444;
+}
+#portfolio-flters li:hover, #portfolio-flters li.filter-active {
+  border-color: #3EC1D5;
+  background: #3EC1D5;
+  color: #fff;
+}
+#portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.single-awesome-portfolio {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 25%;
+  position: relative;
+}
+
+.single-awesome-project {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.first-item {
+  margin-bottom: 30px;
+}
+
+.awesome-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.awesome-img > a {
+  display: block;
+  position: relative;
+}
+
+.single-awesome-project:hover .awesome-img > a::after {
+  opacity: 1;
+}
+
+.single-awesome-project:hover .add-actions {
+  opacity: 1;
+  bottom: 0;
+}
+
+.awesome-img > a::after {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.add-actions {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  bottom: 30px;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 10px 15px;
+  position: absolute;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+}
+
+.project-dec {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-dec a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-dec h4 {
+  margin-bottom: 5px;
+}
+
+.project-dec h4:hover {
+  color: #fff;
+}
+
+.project-dec h4 {
+  color: #ddd;
+  font-size: 24px;
+  margin-top: -45px;
+  padding-top: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.project-dec span {
+  color: #ddd;
+  font-size: 13px;
+}
+
+.project-action-btn {
+  display: block;
+  height: 100%;
+  text-align: center;
+  transition: all 1s ease 0s;
+  width: 100%;
+}
+
+.project-action-btn li {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-action-btn li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+   /* last button */
+.p-btn{
+  margin-left: 700px;
+}
+
+ #portifolio-btn{
+  margin-top: 30px;
+  background-color: #1c1254;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  line-height: 24px;
+  text-decoration: none !important;
+  border: 1px solid #1c1254;
+  
+}
+ #portifolio-btn:hover{
+background-color: white;
+color: #000;
+}
 
 
 
@@ -1215,7 +1555,7 @@ div#preloader {
 --------------------------------------------------------------*/
 footer{
     padding: 80px 0;
-    background: url("../img/venubox/moon.jpg") no-repeat;
+    background: url("../img/venubox/footer1.webp") no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;

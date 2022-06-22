@@ -49,11 +49,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Gamification</a></li>
-          <li><a class="nav-link scrollto" href="#about">Trending GAmes</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Gomification</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#about">Trending GAmes</a></li> -->
+
+
+          
+          <li class="dropdown"><a href="#"><span>Trending Games</span> <i class="bi bi-chevron-down"></i></a>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Our work</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#team">Blog</a></li> -->
+          <li><a class="nav-link scrollto" href="design.html">Our work</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Why Capermint</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -200,20 +203,21 @@
                  you accomplish your goals. Here’s a list of our services that we offer</p>
             </div>
 
-            <div class="row" data-aos="fade-left">
-              <div class="col-lg-4 col-md-4">
+            <div class="row " data-aos="fade-left">
+              <div class="col-lg-4 col-md-4 firstSection">
                 <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                  <div class="pic"><img src="assets/img/service/service1.webp" id="s-img1"  class="img-service" alt="">
+                  <div class="pic"><img src="assets/img/service/service1.webp" id="s-img1"  class="img-service" alt="Game">
+                    
                     <div class="overlay">
-                      <h2>APP DEVELOP</h2>
+                      <h2>Games</h2>
                       <div class="text">
                         <ul>
-                          <li> App Development Service</li>
-                          <li> App Development Service</li>
-                          <li> App Development Service</li>
-                          <li> App Development Service</li>
-                          <li> App Development Service</li>
-                          <li> App Development Service</li>
+                          <li><a href="#">Native Mobile Games</a></li>
+                          <li><a href="#">3D Games Service</a></li>
+                          <li><a href="#">HTML Game Service</a></li>
+                          <li><a href="#">PUBG Game Service</a></li>
+                          <li><a href="#">Complex Game Service</a></li>
+                          <li><a href="#">Unity Game Service</a></li>
                         </ul>
                       </div>
                     </div>
@@ -222,19 +226,19 @@
                 </div>
               </div>
     
-              <div class="col-lg-4 col-md-4 mt-5 mt-md-0">
+              <div class="col-lg-4 col-md-4 mt-5 mt-md-0 secondSection">
                 <div class="member" data-aos="zoom-in" data-aos-delay="200">
                   <div class="pic"><img src="assets/img/service/service2.webp" class="img-service" alt="">
-                    <div class="overlay">
-                      <h2>Graphic DEVELOP</h2>
+                    <div class="overlayA">
+                      <h2>Graphic</h2>
                       <div class="text">
                         <ul>
-                          <li> Graphic Designing Service</li>
-                          <li> Graphic Designing Service</li>
-                          <li> Graphic Designing Service</li>
-                          <li> Graphic Designing Service</li>
-                          <li> Graphic Designing Service</li>
-                          <li> Graphic Designing Service</li>
+                          <li><a href="#"> 3D Design Modiling </a></li>
+                          <li><a href="#"> Mobile UI Design </a></li>
+                          <li><a href="#"> 2D Character Design </a></li>
+                          <li><a href="#"> Special Game Slot </a></li>
+                          <li><a href="#"> 3D Gaming Design </a></li>
+                          <li><a href="#"> Game Environment Art </a></li>
                         </ul>
                       </div>
                     </div>
@@ -242,19 +246,19 @@
                 </div>
               </div>
     
-              <div class="col-lg-4 col-md-4 mt-5 mt-lg-0">
+              <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 thirdSection">
                 <div class="member" data-aos="zoom-in" data-aos-delay="300">
                   <div class="pic"><img src="assets/img/service/service3.webp" class="img-service"  alt="">
-                    <div class="overlay">
-                      <h2>Web DEVELOP</h2>
+                    <div class="overlayB">
+                      <h2>App</h2>
                       <div class="text">
                         <ul>
-                          <li> Web Development Service</li>
-                          <li> Web Development Service</li>
-                          <li> Web Development Service</li>
-                          <li> Web Development Service</li>
-                          <li> Web Development Service</li>
-                          <li> Web Development Service</li>
+                          <li><a href="#"> App Development Service </a></li>
+                          <li><a href="#"> Mobile Development Service</a></li>
+                          <li><a href="#"> React Development Service</a></li>
+                          <li><a href="#"> Flutter Development Service</a></li>
+                          <li><a href="#"> Iphone Development Service</a></li>
+                          <li><a href="#"> Oppo Development Service</a></li>
                         </ul>
                       </div>
                     </div>
@@ -275,10 +279,10 @@
               <h2 class="kick-heading">How to kick start a project?</h2>
               <p class="kick-text"> You are just simple four steps away to kick start your dream project with us:</p>
               <div class="pic mt-5 mb-5">
-                <img src="assets/img/venubox/web.PNG" alt="">
+                <img src="assets/img/venubox/snip1.PNG" alt="">
               </div>
             </div>        
-            <div class="reviews-area">
+            <div class="reviews-area" id="kick-btn">
               <div class="row g-0">
                 <div class="col-lg-6 work-right-text d-flex align-items-center">
                   <div class="px-5 py-5 py-lg-0">
@@ -286,7 +290,7 @@
                     <p style="color:black; font-size: 18px;" >We nourish the needs of our clients with the best team distribution.
                        In addition, our pool of talent helps us achieve outstanding and
                         astonishing results in each project that we undertake.</p>
-                    <a href="#contact" class="btn btn-primary">Contact us</a>
+                        <button type="button" id="btn" class="btn btn-primary">Contact Us</button>
                   </div>
                 </div>
                 <div class="col-lg-6 ml-5">
@@ -317,46 +321,46 @@
                     <!-- Start Left services -->
                     <div class="clint-head col-md-3 col-sm-3 col-xs-12">
                           <div class="single-services">
-                            <img src="assets/img/venubox/2.webp">
+                            <img height="110" width="135" src="assets/img/venubox/2.webp">
                           </div>
                     </div>
                     <div class="clint-head col-md-3 col-sm-3 col-xs-12" style="padding-top: 15px;" >
                           <div class="single-services">
-                            <img src="assets/img/venubox/1.webp">
+                            <img height="93" width="132" src="assets/img/venubox/1.webp">
                           </div>
                     </div>
                     <div class="clint-head col-md-3 col-sm-3 col-xs-12">
                       <!-- end col-md-4 -->
                           <div class="single-services">
-                            <img src="assets/img/venubox/4.webp">
+                            <img height="110" width="135" src="assets/img/venubox/4.webp">
                           </div>
                     </div>
                     <div class=" clint-head col-md-3 col-sm-3 col-xs-12">
                           <div class="single-services">
-                            <img src="assets/img/venubox/3.webp">
+                            <img height="126" width="164" src="assets/img/venubox/3.webp">
                           </div>
                     </div>
                     <!-- End Left services -->
                     <div class=" clint-head col-md-3 col-sm-3 col-xs-12">
                           <div class="single-services">
-                            <img src="assets/img/venubox/5.webp">
+                            <img height="110" width="135" src="assets/img/venubox/5.webp">
                           </div>
                     </div> 
 
                     <div class=" clint-head col-md-3 col-sm-3 col-xs-12">
                           <div class="single-services">
-                            <img src="assets/img/venubox/6.webp">
+                            <img height="110" width="135" src="assets/img/venubox/6.webp">
                           </div>
                     </div> 
                      
                     <div class=" clint-head col-md-3 col-sm-3 col-xs-12">
                         <div class="single-services">
-                            <img src="assets/img/venubox/7.webp">
+                            <img height="116" width="120" src="assets/img/venubox/7.webp">
                         </div>
                     </div> 
                     <div class=" clint-head col-md-3 col-sm-3 col-xs-12" style="padding-top: 25px;">
                       <div class="single-services">
-                          <img src="assets/img/venubox/8.webp">
+                          <img height="77" width="200" src="assets/img/venubox/8.webp">
                       </div>
                   </div> 
 
@@ -370,7 +374,7 @@
                       <h2>Here's why fast growing company loves Capermint!</h2>
                     </div>
                    
-                    <div class="reviews-area">
+                    <div class="reviews-area" id="kick-btn">
                       <div class="row g-0">
                         <div class="col-lg-6 work-right-text d-flex align-items-center">
                           <div class="px-5 py-5 py-lg-0">
@@ -380,7 +384,7 @@
                                 clinics, hospitals, local community services centres, 
                                long-term care<br> centres, etc.) to exceptional relief pharmacists, nurses, personal<br>
                                support workers, assistants, technicians and students.</p>
-                            <button type="button" class="btn btn-primary" style="margin-top: 30px;"> Contact Us</button>
+                               <button type="button" id="btn" class="btn btn-primary">Contact Us</button>
                           </div>
                         </div>
 
@@ -413,8 +417,8 @@
                         <div class="card m-2" >
                           <img src="assets/img/venubox/latest1.webp" alt=""/>
                           <div class="card-body">
-                            <h2 class="card-title">Mountains</h2>
-                            <p class="card-text">This is a photo of snowy-covered mountains. How majestic.</p>
+                            <h2 class="card-title">Gameing Cards</h2>
+                            <p class="card-text">How Much Does Trump Crads Gaming DevelopmentCosts? How majestic.</p>
                             <a href="#" class="btn btn-secondary">Contact Us</a>
                           </div>
                         </div>
@@ -423,8 +427,8 @@
                         <div class="card m-2" >
                           <img src="assets/img/venubox/latest2.webp" alt=""/>
                           <div class="card-body">
-                            <h2 class="card-title">Mountains</h2>
-                            <p class="card-text">This is a photo of snowy-covered mountains. How majestic.</p>
+                            <h2 class="card-title">Full-Fludded</h2>
+                            <p class="card-text">How To Find Full-Fludded Games Development Studio!</p>
                             <a href="#" class="btn btn-secondary">Contact Us</a>
                           </div>
                         </div>
@@ -433,8 +437,8 @@
                         <div class="card m-2" >
                           <img src="assets/img/venubox/latest3.webp" alt=""/>
                           <div class="card-body">
-                            <h2 class="card-title">Mountains</h2>
-                            <p class="card-text">This is a photo of snowy-covered mountains. How majestic.</p>
+                            <h2 class="card-title">Top 12</h2>
+                            <p class="card-text">Top 12 Find Games Development Agencies in Canada Studio!</p>
                             <a href="#" class="btn btn-secondary">Contact Us</a>
                           </div>
                         </div>
@@ -757,7 +761,7 @@
           <div class="col-md-4">
             <div class="footer-content">
               <div class="footer-head">
-                <h4 style="color: #3EC1D5;">Instagram</h4>
+                <h4>Instagram</h4>
                 <div class="flicker-img">
                   <a href="#"><img src="assets/img/portfolio/1.jpg" alt=""></a>
                   <a href="#"><img src="assets/img/portfolio/2.jpg" alt=""></a>
