@@ -2011,3 +2011,19 @@ footer{
     padding: 0;
   }
 }
+
+/* mega manue bar */
+.dropdown-hover:hover>.dropdown-menu {
+  display: inline-block;
+  }
+
+  .dropdown-hover>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+  }
+  .list-group{
+    background-color: #000;
+  }
+  .list-group-item{
+    background-color: #000;
+  }
