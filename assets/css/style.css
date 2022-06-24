@@ -689,7 +689,7 @@ div#preloader {
     font-size: 2rem;
 }
 .services-head p{
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .services-area .member {
@@ -734,6 +734,8 @@ div#preloader {
    width: 135px;
    margin-left: 30px;
    padding-bottom: 5px;
+   font-size: 18px;
+   text-align: center;
 
 }
 .overlayA{
@@ -757,7 +759,9 @@ div#preloader {
    background-color: #3EC1D5;
    margin-left: 30px;
    padding-bottom: 5px;
-   width: 140px;
+   width: 135px;
+   font-size: 18px;
+   text-align: center;
 
 }
 .overlayB {
@@ -779,9 +783,11 @@ div#preloader {
    color: white;
    margin-top: 20px;
    background-color: #3EC1D5;
-   width: 85px;
    margin-left: 30px;
    padding-bottom: 5px;
+   width: 135px;
+   font-size: 18px;
+   text-align: center;
 }
 .text{
      margin-left: 0%;
@@ -815,7 +821,8 @@ div#preloader {
     font-size: 15px;
     position: absolute;
     margin-left: 20px;
-    line-height: 2.0;
+    line-height: 1.9;
+    height: 350px;
   }
 }
 /*--------------------------------------------------------------
@@ -879,6 +886,7 @@ color: #000;
   padding-top: 20px;
   padding-bottom: 15px;
 }
+
 
 /*--------------------------------------------------------------
 # Team
@@ -1180,9 +1188,20 @@ color: #000;
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact-form{
+  margin-left: 50px;
+}
+.form-heading{
+  margin-left: 50px;
+}
+.form-group{
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
 .contact-area {
   height: auto;
   width: 100%;
+  
 }
 
 .contact-content {
@@ -1303,6 +1322,147 @@ color: #000;
     transform: rotate(360deg);
   }
 }
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing-area {
+  background: rgba(0, 0, 0, 0.02) none repeat scroll 0 0;
+}
+
+.pri_table_list {
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+  background: #fff;
+  border-radius: 25px;
+}
+
+.pri_table_list h3 span {
+  font-size: 16px;
+}
+
+.pri_table_list ol li {
+  border-bottom: 1px solid #ccc;
+  color: #666;
+  padding: 12px 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pri_table_list li.check {
+  font-weight: 600;
+}
+
+.pri_table_list li.check i {
+  color: #3EC1D5;
+  line-height: 0;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.pri_table_list li.cross {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.pri_table_list li.cross i {
+  color: #999;
+  line-height: 0;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.pri_table_list button {
+  background: #444 none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  border-radius: 30px;
+}
+
+.pri_table_list > h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 30px 0 20px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+
+.pri_table_list ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.pri_table_list.active {
+  transition: all 0.4s ease 0s;
+  position: relative;
+  overflow: hidden;
+}
+
+.saleon {
+  background: #3EC1D5 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  left: -26px;
+  padding: 2px 25px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 16px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+.pri_table_list > button:hover {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.active > h3 {
+  background: #f5f5f5 none repeat scroll 0 0;
+  color: #333;
+  transition: all 0.4s ease 0s;
+}
+
+.active > button {
+  background: #3EC1D5 none repeat scroll 0 0;
+  border: 1px solid #3EC1D5;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.active > button:hover {
+  background: #333 none repeat scroll 0 0;
+  border: 1px solid #333;
+  color: #fff;
+  transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -2029,6 +2189,408 @@ footer{
   }
    .list-group a:hover{
     color: black;
+  
   } 
 
- 
+ .dropdown-menu{
+    margin-left: -560px !important;
+    width: 1330px;
+ }
+#list-head{
+  background-color:#3EC1D5;
+}
+@media (max-width: 575px) {
+  .list-group-item{
+    color: white;
+    background-color:blue;
+    margin-left: 545px !important;
+    
+  }
+}
+
+/* why caperment */
+
+#menu-drop{
+  width: 230px;
+  margin-left: 0px !important;
+
+}
+@media (max-width: 575px) {
+  #menu-drop{
+    width: 370px;
+   
+    
+  }
+}
+@media (max-width:575px) {
+  #list-gp #list-head1{
+    color: white;
+    background-color:blue;
+    margin-left: 0px !important;
+    width: 350;
+    margin-top: 0%;
+    
+  }
+}
+                                     /*--------------------------------------------------------------
+                                                                # gamification section
+                                      --------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# gamification
+--------------------------------------------------------------*/
+.gamification-main{
+  background-color: #06062f;
+  
+}
+.gamification-area h2{
+  color: white;
+}
+.gami-head{
+  color: white;
+}
+.gami-span{
+  color: #10acc0;
+  font-size: 35px;
+  margin-left: 0%;
+}
+
+.gamification-area .single-well h4 {
+  font-size: 30px;
+  color: white;
+  margin-top: 170px;
+  margin-left: 40px;
+}
+.gamification-area .single-well h1 {
+  font-size: 55px;
+  margin-top: 35px;
+ color:white;
+ margin-left: 40px;
+
+}
+.gamification-area .single-well .p1{
+    color:white;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    margin-left: 45px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.gamification-area .single-well p{
+  color:white;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 30px;
+    margin-left: 45px;
+}
+
+.single-well #btn{
+    margin-top: 30px;
+    background-color: #1c1254;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    line-height: 24px;
+    text-decoration: none !important;
+    border: 1px solid #1c1254;
+    margin-left: 40px;
+    
+}
+.single-well #btn:hover{
+  background-color: white;
+  color: #000;
+}
+/* @media (max-width: 768px) {
+  .gamification-area .single-well h1 {
+    margin-left:10px;
+  }
+  } */
+
+@media (max-width: 768px) {
+.gamification-area #btn{
+  margin-left: 130px;
+}
+}
+@media (max-width: 768px) {
+  .gamification-area .single-well h4 {
+     align-items: center;
+     font-size: 20px;
+     text-align: center;
+     margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .gamification-area .single-well h1 {
+     align-items: center;
+     font-size: 40px;
+     text-align: center;
+     
+  }
+}
+@media (max-width: 768px) {
+  .gamification-area .single-well .p1 {
+     align-items: center;
+    margin-right: 20px;
+     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .gamification-area .single-well p{
+     align-items: center;
+    margin-right: 20px;
+     text-align: center;
+  }
+}
+
+/* img */
+@media (max-width: 768px) {
+  .gamification-area img{
+     
+     align-items: center;
+     justify-content: center;
+    margin-left: 5px;
+  }
+}
+
+
+
+.gamification-second{
+  margin-top: 100px;
+  align-items: center;
+} 
+h4{
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+ /*  */
+ /*  */
+
+
+ .gaming-well-main h1 {
+   font-size: 35px;
+  color:white;
+  margin-left: 110px;
+}
+
+.gaming-well-main p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    justify-content: baseline;
+    text-align: justify;
+    margin-left: 15px;
+}
+.gaming-well-main{
+  margin-bottom: 40px;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  
+}
+@media (max-width: 768px) {
+  .gaming-well-main h1{
+     font-size: 23px;
+     margin-left: 0px;
+     /* justify-content: baseline; */
+
+  }
+}
+@media (max-width: 768px) {
+  .gaming-well-main p{
+     font-size: 18px;
+     margin-left: 0px;
+     text-align: justify;
+     align-items: baseline;
+  }
+}
+
+
+/* end */
+
+
+/* start */
+
+.well-main{
+  background-color: #10acc0;
+  width: 350px;
+  height: 130px;
+  border-radius: 15px;
+
+}
+.well-sub{
+  text-align: center;
+  
+  
+  
+}
+.well-sub h4{
+  padding-top: 25px;
+  font-size: 25px;
+  
+}
+.well-sub p{
+  
+  color: white;
+  
+}
+#btn-get{
+  margin-top: 30px;
+  background-color: #1c1254;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  line-height: 24px;
+  text-decoration: none !important;
+  border: 1px solid #1c1254;
+  margin-left: 30px;
+  
+}
+ #btn-get:hover{
+background-color: white;
+color: #000;
+}
+
+@media (max-width: 768px) {
+  .well-main{
+     /* align-items: center;
+     text-align: center; */
+     margin-left: 22px;
+  }
+}
+
+/*  */
+/*  */
+.technology-area h1{
+  color: #fff;
+    font-family: Poppins,Sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+.technology-area p{
+    text-align: center;
+    color: #fff;
+    line-height: 2em;
+}
+
+
+
+
+/*  */
+/*  */
+
+
+
+
+/* .technology-single ul li {
+  color:white;
+  display: block;
+  padding: 5px 0;
+} */
+.technology-single ul{
+  margin-top: 40px;
+}
+.technology-single ul li i {
+  color: #3EC1D5;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.technology-single ul li {
+  margin-bottom: 0;
+    color: #fff;
+    font-family: Poppins,Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+.technology-img img{
+  height: 400px;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 300px;
+}
+
+@media (max-width: 768px) {
+  .technology-single ul{
+     
+     align-items: center;
+     margin-left: 60px;
+     
+   
+  }
+}
+
+@media (max-width: 768px) {
+  .technology-img img{
+     /* margin-right: 300px; */
+     align-items: center;
+     justify-content: center;
+     margin-left: 80px;
+  }
+}
+
+
+#btn-btn{
+  margin-top: 30px;
+  background-color: #1c1254;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  line-height: 24px;
+  text-decoration: none !important;
+  border: 1px solid #1c1254;
+  
+  
+}
+ #btn-btn:hover{
+background-color: white;
+color: #000;
+}
+
+@media (max-width: 768px) {
+  #btn-btn{
+     /* margin-right: 300px; */
+     align-items: center;
+     margin-left: 100px;
+     
+   
+  }
+}
+
+
+.faqs-area h5{
+  font-size: 45px;
+  color: white;
+}
+.faqs-area p{
+  font-size: 17px;
+  color: white;
+  margin-top: 30px;
+}
+.fqas-box{
+  border: 2px solid white;
+  margin-top: 50px;
+  
+}
+.fqas-box p{
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.fqas-box:hover{
+  background-color: #10acc0;
+  color: white;
+}
+
+#plus-icon{
+  float: right;
+}
