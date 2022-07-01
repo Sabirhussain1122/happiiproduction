@@ -2182,50 +2182,66 @@ footer{
   pointer-events: none;
   }
   .list-group{
-    background-color: #000;
+    background-color: white;
   }
   .list-group-item{
-    background-color: #000;
+    background-color: white;
+  }
+  .list-group a{
+    color: black;
   }
    .list-group a:hover{
-    color: black;
+    color:blue;
   
   } 
 
  .dropdown-menu{
-    margin-left: -560px !important;
+    margin-left: -540px !important;
     width: 1330px;
  }
 #list-head{
-  background-color:#3EC1D5;
+  background-color:black !important;
+  color: white; 
 }
+
 @media (max-width: 575px) {
   .list-group-item{
-    color: white;
-    background-color:blue;
-    margin-left: 545px !important;
+ 
+    margin-left: 535px !important;
     
   }
 }
+
+#service-dropdown{
+  margin-left: -725px !important;
+}
+
+@media (max-width: 575px) {
+  #service-dropdown .list-group-item{
+    margin-left: 710px !important;
+    
+  }
+}
+
 
 /* why caperment */
 
 #menu-drop{
-  width: 230px;
+  width: 260px;
   margin-left: 0px !important;
 
 }
+/*  */
+
 @media (max-width: 575px) {
   #menu-drop{
-    width: 370px;
-   
-    
+    width: 370px;  
   }
 }
+
 @media (max-width:575px) {
   #list-gp #list-head1{
-    color: white;
-    background-color:blue;
+    color:black;  
     margin-left: 0px !important;
     width: 350;
     margin-top: 0%;
